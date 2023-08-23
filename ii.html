@@ -7,6 +7,57 @@
      <style>
         html, body {
             margin: 0;
+            填充：0；
+            高度：100 %；
+        }
+        
+        .容器{
+            宽度：100%；width: 100%;
+            高度：100%；height: 100%;
+        }}
+        
+        。左边 {{
+            位置：相对；position: relative;
+            宽度：100%；width: 100%;
+            高度：100%；height: 100%;
+        }}
+        
+        .imageBox {{
+            位置：绝对；position: absolute;
+            顶部：0；top: 0;
+            左：0；left: 0;
+            宽度：100%；width: 100%;
+            高度：100%；height: 100%;
+            溢出：隐藏；overflow: hidden;
+        }}
+        
+        图像{{
+            宽度：100%；width: 100%;
+            高度：100%；height: 100%;
+            对象适配：覆盖；object-fit: cover;
+            对象位置：中心；object-position: center;
+        }}
+    </风格>
+</头>
+<正文>
+    < div class = “容器” >
+        < div类= “左” >
+            <div class="imageBox">
+                <img src="https://kjimg10.360buyimg.com/ott/jfs/t20250724/223378/14/23023/391374/64bfe61aF1f087a9d/bebe720404b0157b.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <title>用浏览器打开</title>
+</body>
+     </html><!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+     <style>
+        html, body {
+            margin: 0;
             padding: 0;
             height: 100%;
         }
@@ -14,28 +65,26 @@
         .container {
             width: 100%;
             height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .left {
-            position: relative;
-            width: 100%;
-            height: 100%;
+            width: auto;
+            max-width: 100%;
+            max-height: 100%;
         }
         
         .imageBox {
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
-            height: 100%;
-            overflow: hidden;
+            height: auto;
         }
         
         img {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
+            height: auto;
+            display: block;
         }
     </style>
 </head>
